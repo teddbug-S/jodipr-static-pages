@@ -1,0 +1,1 @@
+# jodipr-static-pages
