@@ -1,0 +1,97 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Outfit-Regular;
+    src: url("/src/fonts/Outfit-font/Outfit-Regular.ttf");
+}
+
+@font-face {
+    font-family: Outfit-Light;
+    src: url("/src/fonts/Outfit-font/Outfit-Light.ttf");
+}
+
+@font-face {
+    font-family: Outfit-Medium;
+    src: url("/src/fonts/Outfit-font/Outfit-Medium.ttf");
+}
+
+@font-face {
+    font-family: Outfit-Bold;
+    src: url("/src/fonts/Outfit-font/Outfit-Bold.ttf");
+}
+
+@font-face {
+    font-family: Outfit-ExtraBold;
+    src: url("/src/fonts/Outfit-font/Outfit-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url("/src/fonts/Montserrat-font/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url("/src/fonts/Montserrat-font/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url("/src/fonts/Montserrat-font/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url("/src/fonts/Montserrat-font/Montserrat-ExtraBold.ttf");
+}
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: black;
+    transform: rotate(0);
+    transition: all 0.5s;
+
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}

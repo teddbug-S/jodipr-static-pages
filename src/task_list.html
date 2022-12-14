@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <title>Tasks</title>
+  </head>
+  <body>
+    <div class="container w-3/4 relative mx-auto">
+      <!-- Navbar -->
+      <nav class="p-3 mt-2">
+        <div class="flex items-center justify-between">
+          <!-- brand logo -->
+          <div class="pt-2 w-1/2 md:max-w-max">
+            <img class="w-28" src="images/logo.svg" alt="" />
+          </div>
+          <!-- nav links -->
+          <div
+            class="hidden md:flex items-center justify-center font-MontserratM text-xs text-primaryBlue space-x-6"
+          >
+            <a
+              class="transition ease-in-out duration-300 hover:text-primaryBlack"
+              href="#"
+              >Tasks</a
+            >
+            <a
+              class="transition ease-in-out duration-300 hover:text-primaryBlack"
+              href="#"
+              >Bonus tasks</a
+            >
+            <a
+              class="transition ease-in-out duration-300 hover:text-primaryBlack"
+              href="#"
+              >Dashboard</a
+            >
+            <a
+              class="transition ease-in-out duration-300 hover:text-primaryBlack"
+              href="#"
+              >Learn more</a
+            >
+          </div>
+          <!-- Profile button -->
+          <div
+            class="flex items-center p-1 hover:drop-shadow-sm bg-slate-100 rounded-xl transition-all ease-in-out duration-100 border-2 border-slate-100 hover:border-slate-300 justify-center hover:cursor-pointer"
+          >
+            <img
+              class="w-5 h-5 opacity-60 hover:opacity-100"
+              src="images/account.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main body section -->
+      <div class="flex flex-col w-[60rem] mx-auto mt-10">
+        <!-- Hero section -->
+        <div class="flex bg-primaryBlue rounded-xl h-32"></div>
+        <!-- Search and filter bars -->
+        <div class="flex mt-4 flex-row items-center justify-between">
+          <!-- Searchbar -->
+          <div
+            class="flex bg-slate-200 rounded-xl p-1 space-x-1 flex-row items-center"
+          >
+            <!-- Search icon -->
+            <div class="p-2 ml-2">
+              <img class="w-4 h-4 opacity-60" src="images/loupe.png" alt="" />
+            </div>
+            <input
+              class="text-slate-700 text-base font-OutfitR focus:outline-none bg-slate-200 p-2 rounded-xl"
+              type="text"
+              placeholder="Search"
+            />
+          </div>
+
+          <!-- Filter bar -->
+          <div
+            class="flex flex-row items-center justify-end space-x-6 p-1 pl-3 rounded-xl bg-slate-200"
+          >
+            <p class="text-slate-700 font-OutfitR text-base">Filter</p>
+            <!-- filter icon -->
+            <div
+              class="flex bg-slate-100 p-1 rounded-lg hover:cursor-pointer hover:border-slate-400 transition-all duration-100 ease-in-out border-2"
+            >
+              <img src="images/filter-slide.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Tasks container -->
+        <div
+          class="flex flex-col space-y-8 items-center justify-center mx-auto p-2 mt-8"
+        >
+          <!-- Task container row -->
+          <div class="flex flex-row items-start mx-auto space-x-5">
+            <!-- Task object -->
+            <div
+              class="flex flex-col bg-primaryBlue w-[19rem] h-[25rem] rounded-2xl hover:cursor-pointer shadow-md hover:blur-[2px]"
+            >
+              <!-- Display image -->
+              <div class="flex items-start justify-start">
+                <img
+                  class="w-full h-[14rem] rounded-t-xl object-cover"
+                  src="images/hbo.jpg"
+                  alt=""
+                />
+                <!-- Add task button -->
+              </div>
+              <!-- Lower part -->
+              <div class="flex flex-row p-4 items-center justify-between">
+                <!-- Text container -->
+                <div class="flex flex-col">
+                  <h2 class="text-white font-OutfitM text-xl">Fossbyte</h2>
+                  <p class="text-white font-OutfitR w-[10rem] text-sm">
+                    Elon musk announced that Apple Inc has "completely resumed"
+                    advertising on twitter Inc.
+                  </p>
+                </div>
+                <!-- Action image -->
+                <div class="flex flex-col mt-4 items-center space-y-5">
+                  <img class="w-12 h-12" src="images/share-link.png" alt="" />
+                  <h2 class="text-white font-OutfitM text-xl">Facebook</h2>
+                </div>
+              </div>
+              <div class="flex mx-auto mt-2">
+                <p class="text-white text-xs font-OutfitR">1 of 23</p>
+              </div>
+            </div>
+
+            <!-- Object 2 -->
+            <!-- Task object -->
+            <div
+              class="flex flex-col bg-primaryBlue w-[19rem] h-[25rem] rounded-2xl hover:cursor-pointer shadow-md hover:blur-[2px]"
+            >
+              <!-- Display image -->
+              <div class="flex items-start justify-start">
+                <img
+                  class="w-full h-[14rem] rounded-t-xl object-cover"
+                  src="images/hbo.jpg"
+                  alt=""
+                />
+                <!-- Add task button -->
+              </div>
+              <!-- Lower part -->
+              <div class="flex flex-row p-4 items-center justify-between">
+                <!-- Text container -->
+                <div class="flex flex-col">
+                  <h2 class="text-white font-OutfitM text-xl">Fossbyte</h2>
+                  <p class="text-white font-OutfitR w-[10rem] text-sm">
+                    Elon musk announced that Apple Inc has "completely resumed"
+                    advertising on twitter Inc.
+                  </p>
+                </div>
+                <!-- Action image -->
+                <div class="flex flex-col mt-4 items-center space-y-5">
+                  <img class="w-12 h-12" src="images/share-link.png" alt="" />
+                  <h2 class="text-white font-OutfitM text-xl">Facebook</h2>
+                </div>
+              </div>
+              <div class="flex mx-auto mt-2">
+                <p class="text-white text-xs font-OutfitR">1 of 23</p>
+              </div>
+            </div>
+
+            <!-- Object 3 -->
+            <!-- Task object -->
+            <div
+              class="flex flex-col bg-primaryBlue w-[19rem] h-[25rem] rounded-2xl hover:cursor-pointer shadow-md hover:blur-[2px]"
+            >
+              <!-- Display image -->
+              <div class="flex items-start justify-start">
+                <img
+                  class="w-full h-[14rem] rounded-t-xl object-cover"
+                  src="images/hbo.jpg"
+                  alt=""
+                />
+                <!-- Add task button -->
+              </div>
+              <!-- Lower part -->
+              <div class="flex flex-row p-4 items-center justify-between">
+                <!-- Text container -->
+                <div class="flex flex-col">
+                  <h2 class="text-white font-OutfitM text-xl">Fossbyte</h2>
+                  <p class="text-white font-OutfitR w-[10rem] text-sm">
+                    Elon musk announced that Apple Inc has "completely resumed"
+                    advertising on twitter Inc.
+                  </p>
+                </div>
+                <!-- Action image -->
+                <div class="flex flex-col mt-4 items-center space-y-5">
+                  <img class="w-12 h-12" src="images/share-link.png" alt="" />
+                  <h2 class="text-white font-OutfitM text-xl">Facebook</h2>
+                </div>
+              </div>
+              <div class="flex mx-auto mt-2">
+                <p class="text-white text-xs font-OutfitR">1 of 23</p>
+              </div>
+            </div>
+          </div>
+          <!-- Row 2 -->
+          <!-- Task container row -->
+          <div class="flex flex-row items-start mx-auto space-x-5">
+            <!-- Task object -->
+            <div
+              class="flex flex-col bg-primaryBlue w-[19rem] h-[25rem] rounded-2xl hover:cursor-pointer shadow-md hover:blur-[2px]"
+            >
+              <!-- Display image -->
+              <div class="flex items-start justify-start">
+                <img
+                  class="w-full h-[14rem] rounded-t-xl object-cover"
+                  src="images/hbo.jpg"
+                  alt=""
+                />
+                <!-- Add task button -->
+              </div>
+              <!-- Lower part -->
+              <div class="flex flex-row p-4 items-center justify-between">
+                <!-- Text container -->
+                <div class="flex flex-col">
+                  <h2 class="text-white font-OutfitM text-xl">Fossbyte</h2>
+                  <p class="text-white font-OutfitR w-[10rem] text-sm">
+                    Elon musk announced that Apple Inc has "completely resumed"
+                    advertising on twitter Inc.
+                  </p>
+                </div>
+                <!-- Action image -->
+                <div class="flex flex-col mt-4 items-center space-y-5">
+                  <img class="w-12 h-12" src="images/share-link.png" alt="" />
+                  <h2 class="text-white font-OutfitM text-xl">Facebook</h2>
+                </div>
+              </div>
+              <div class="flex mx-auto mt-2">
+                <p class="text-white text-xs font-OutfitR">1 of 23</p>
+              </div>
+            </div>
+
+            <!-- Object 2 -->
+            <!-- Task object -->
+            <div
+              class="flex flex-col bg-primaryBlue w-[19rem] h-[25rem] rounded-2xl hover:cursor-pointer shadow-md hover:blur-[2px]"
+            >
+              <!-- Display image -->
+              <div class="flex items-start justify-start">
+                <img
+                  class="w-full h-[14rem] rounded-t-xl object-cover"
+                  src="images/hbo.jpg"
+                  alt=""
+                />
+                <!-- Add task button -->
+              </div>
+              <!-- Lower part -->
+              <div class="flex flex-row p-4 items-center justify-between">
+                <!-- Text container -->
+                <div class="flex flex-col">
+                  <h2 class="text-white font-OutfitM text-xl">Fossbyte</h2>
+                  <p class="text-white font-OutfitR w-[10rem] text-sm">
+                    Elon musk announced that Apple Inc has "completely resumed"
+                    advertising on twitter Inc.
+                  </p>
+                </div>
+                <!-- Action image -->
+                <div class="flex flex-col mt-4 items-center space-y-5">
+                  <img class="w-12 h-12" src="images/share-link.png" alt="" />
+                  <h2 class="text-white font-OutfitM text-xl">Facebook</h2>
+                </div>
+              </div>
+              <div class="flex mx-auto mt-2">
+                <p class="text-white text-xs font-OutfitR">1 of 23</p>
+              </div>
+            </div>
+
+            <!-- Object 3 -->
+            <!-- Task object -->
+            <div
+              class="flex flex-col bg-primaryBlue w-[19rem] h-[25rem] rounded-2xl hover:cursor-pointer shadow-md hover:blur-[2px]"
+            >
+              <!-- Display image -->
+              <div class="flex items-start justify-start">
+                <img
+                  class="w-full h-[14rem] rounded-t-xl object-cover"
+                  src="images/hbo.jpg"
+                  alt=""
+                />
+                <!-- Add task button -->
+              </div>
+              <!-- Lower part -->
+              <div class="flex flex-row p-4 items-center justify-between">
+                <!-- Text container -->
+                <div class="flex flex-col">
+                  <h2 class="text-white font-OutfitM text-xl">Fossbyte</h2>
+                  <p class="text-white font-OutfitR w-[10rem] text-sm">
+                    Elon musk announced that Apple Inc has "completely resumed"
+                    advertising on twitter Inc.
+                  </p>
+                </div>
+                <!-- Action image -->
+                <div class="flex flex-col mt-4 items-center space-y-5">
+                  <img class="w-12 h-12" src="images/share-link.png" alt="" />
+                  <h2 class="text-white font-OutfitM text-xl">Facebook</h2>
+                </div>
+              </div>
+              <div class="flex mx-auto mt-2">
+                <p class="text-white text-xs font-OutfitR">1 of 23</p>
+              </div>
+            </div>
+          </div>
+          <!-- Row 3 -->
+          <!-- Task container row -->
+          <div class="flex flex-row items-start mx-auto space-x-5">
+            <!-- Task object -->
+            <div
+              class="flex flex-col bg-primaryBlue w-[19rem] h-[25rem] rounded-2xl hover:cursor-pointer shadow-md hover:blur-[2px]"
+            >
+              <!-- Display image -->
+              <div class="flex items-start justify-start">
+                <img
+                  class="w-full h-[14rem] rounded-t-xl object-cover"
+                  src="images/hbo.jpg"
+                  alt=""
+                />
+                <!-- Add task button -->
+              </div>
+              <!-- Lower part -->
+              <div class="flex flex-row p-4 items-center justify-between">
+                <!-- Text container -->
+                <div class="flex flex-col">
+                  <h2 class="text-white font-OutfitM text-xl">Fossbyte</h2>
+                  <p class="text-white font-OutfitR w-[10rem] text-sm">
+                    Elon musk announced that Apple Inc has "completely resumed"
+                    advertising on twitter Inc.
+                  </p>
+                </div>
+                <!-- Action image -->
+                <div class="flex flex-col mt-4 items-center space-y-5">
+                  <img class="w-12 h-12" src="images/share-link.png" alt="" />
+                  <h2 class="text-white font-OutfitM text-xl">Facebook</h2>
+                </div>
+              </div>
+              <div class="flex mx-auto mt-2">
+                <p class="text-white text-xs font-OutfitR">1 of 23</p>
+              </div>
+            </div>
+
+            <!-- Object 2 -->
+            <!-- Task object -->
+            <div
+              class="flex flex-col bg-primaryBlue w-[19rem] h-[25rem] rounded-2xl hover:cursor-pointer shadow-md hover:blur-[2px]"
+            >
+              <!-- Display image -->
+              <div class="flex items-start justify-start">
+                <img
+                  class="w-full h-[14rem] rounded-t-xl object-cover"
+                  src="images/hbo.jpg"
+                  alt=""
+                />
+                <!-- Add task button -->
+              </div>
+              <!-- Lower part -->
+              <div class="flex flex-row p-4 items-center justify-between">
+                <!-- Text container -->
+                <div class="flex flex-col">
+                  <h2 class="text-white font-OutfitM text-xl">Fossbyte</h2>
+                  <p class="text-white font-OutfitR w-[10rem] text-sm">
+                    Elon musk announced that Apple Inc has "completely resumed"
+                    advertising on twitter Inc.
+                  </p>
+                </div>
+                <!-- Action image -->
+                <div class="flex flex-col mt-4 items-center space-y-5">
+                  <img class="w-12 h-12" src="images/share-link.png" alt="" />
+                  <h2 class="text-white font-OutfitM text-xl">Facebook</h2>
+                </div>
+              </div>
+              <div class="flex mx-auto mt-2">
+                <p class="text-white text-xs font-OutfitR">1 of 23</p>
+              </div>
+            </div>
+
+            <!-- Object 3 -->
+            <!-- Task object -->
+            <div
+              class="flex flex-col bg-primaryBlue w-[19rem] h-[25rem] rounded-2xl hover:cursor-pointer shadow-md hover:blur-[2px]"
+            >
+              <!-- Display image -->
+              <div class="flex items-start justify-start">
+                <img
+                  class="w-full h-[14rem] rounded-t-xl object-cover"
+                  src="images/hbo.jpg"
+                  alt=""
+                />
+                <!-- Add task button -->
+              </div>
+              <!-- Lower part -->
+              <div class="flex flex-row p-4 items-center justify-between">
+                <!-- Text container -->
+                <div class="flex flex-col">
+                  <h2 class="text-white font-OutfitM text-xl">Fossbyte</h2>
+                  <p class="text-white font-OutfitR w-[10rem] text-sm">
+                    Elon musk announced that Apple Inc has "completely resumed"
+                    advertising on twitter Inc.
+                  </p>
+                </div>
+                <!-- Action image -->
+                <div class="flex flex-col mt-4 items-center space-y-5">
+                  <img class="w-12 h-12" src="images/share-link.png" alt="" />
+                  <h2 class="text-white font-OutfitM text-xl">Facebook</h2>
+                </div>
+              </div>
+              <div class="flex mx-auto mt-2">
+                <p class="text-white text-xs font-OutfitR">1 of 23</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

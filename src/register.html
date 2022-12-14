@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <title>Jodipr - Sign up</title>
+  </head>
+  <body>
+    <div class="container p-4 mx-auto mt-8">
+      <div
+        class="flex flex-col md:flex-row md:space-y-0 md:space-x-4 items-center justify-center md:justify-around"
+      >
+        <!-- on the left side is svg illustration -->
+        <div class="hidden md:flex flex-col justify-start items-center">
+          <img class="mt-24" src="images/signup.svg" alt="" />
+        </div>
+        <!-- right side, containing page header and sign up form  -->
+        <div class="flex flex-col justify-center items-center md:justify-start">
+          <!-- page heading -->
+          <h1
+            class="text-primaryBlue text-center md:text-start text-5xl md:text-7xl font-bold font-OutfitR"
+          >
+            Sign Up
+          </h1>
+          <!-- form -->
+          <div class="flex flex-col mt-10 items-center justify-center">
+            <form
+              action=""
+              class="flex flex-col space-y-6 items-center justify-center"
+            >
+              <fieldset>
+                <!-- Caption -->
+                <legend class="text-slate-700 font-bold text-lg font-OutfitR">
+                  Personal
+                </legend>
+                <!-- text input fields -->
+                <div class="flex flex-row mt-2 space-x-2">
+                  <input
+                    type="text"
+                    placeholder="First name"
+                    name=""
+                    id=""
+                    class="text-slate-700 text-base font-OutfitR w-[9rem] md:w-[10rem] focus:outline-none transition-all ease-in-out duration-200 bg-slate-200 p-2 px-4 rounded-xl"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Last name"
+                    name=""
+                    id=""
+                    class="text-slate-700 text-base font-OutfitR w-[9rem] md:w-[10rem] focus:outline-none transition-all ease-in-out duration-200 bg-slate-200 p-2 px-4 rounded-xl"
+                  />
+                </div>
+              </fieldset>
+              <!-- Fieldset 2 -->
+              <fieldset>
+                <legend class="text-slate-700 font-bold text-lg font-OutfitR">
+                  Authentication & Verification
+                </legend>
+                <!-- text input fields -->
+                <div class="flex flex-col space-y-2 mt-2">
+                  <!-- username field -->
+                  <input
+                    type="text"
+                    placeholder="Username"
+                    name=""
+                    id=""
+                    class="text-slate-700 text-base font-OutfitR focus:outline-none transition-all ease-in-out duration-200 bg-slate-200 w-[18.5rem] md:w-[20.5rem] p-2 px-4 rounded-xl"
+                  />
+                  <!-- password fields -->
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    name=""
+                    id=""
+                    class="text-slate-700 text-base font-OutfitR focus:outline-none transition-all ease-in-out duration-200 bg-slate-200 w-[18.5rem] md:w-[20.5rem] p-2 px-4 rounded-xl"
+                  />
+                  <input
+                    type="password"
+                    placeholder="Confirm password"
+                    name=""
+                    id=""
+                    class="text-slate-700 text-base font-OutfitR focus:outline-none transition-all ease-in-out duration-200 bg-slate-200 w-[18.5rem] md:w-[20.5rem] p-2 px-4 rounded-xl"
+                  />
+                </div>
+              </fieldset>
+
+              <!-- Terms and conditions check box -->
+              <div class="relative flex flex-wrap items-center">
+                <input
+                  class="w-4 h-4 transition-colors bg-white border-2 rounded appearance-none cursor-pointer focus-visible:outline-none peer border-slate-500 checked:border-emerald-500 checked:bg-emerald-500 checked:hover:border-emerald-600 checked:hover:bg-emerald-600 focus:outline-none checked:focus:border-emerald-700 checked:focus:bg-emerald-700 disabled:cursor-not-allowed disabled:border-slate-100 disabled:bg-slate-50"
+                  type="checkbox"
+                  value=""
+                  id="id-c01"
+                  checked
+                />
+                <label
+                  class="pl-2 cursor-pointer text-base font-OutfitR text-slate-400 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400"
+                  for="id-c01"
+                >
+                  I have read and agreed to the <a href="#" class="text-primaryBlue hover:underline">Terms of Use</a>
+                </label>
+                <svg
+                  class="absolute left-0 w-4 h-4 transition-all duration-200 -rotate-90 opacity-0 pointer-events-none top-1 fill-white stroke-white peer-checked:rotate-0 peer-checked:opacity-100 peer-disabled:cursor-not-allowed"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  aria-labelledby="title-1 description-1"
+                  role="graphics-symbol"
+                >
+                  <title id="title-1">Check mark icon</title>
+                  <desc id="description-1">
+                    Check mark icon to indicate whether the radio input is
+                    checked or not.
+                  </desc>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.8116 5.17568C12.9322 5.2882 13 5.44079 13 5.5999C13 5.759 12.9322 5.91159 12.8116 6.02412L7.66416 10.8243C7.5435 10.9368 7.37987 11 7.20925 11C7.03864 11 6.87501 10.9368 6.75435 10.8243L4.18062 8.42422C4.06341 8.31105 3.99856 8.15948 4.00002 8.00216C4.00149 7.84483 4.06916 7.69434 4.18846 7.58309C4.30775 7.47184 4.46913 7.40874 4.63784 7.40737C4.80655 7.406 4.96908 7.46648 5.09043 7.57578L7.20925 9.55167L11.9018 5.17568C12.0225 5.06319 12.1861 5 12.3567 5C12.5273 5 12.691 5.06319 12.8116 5.17568Z"
+                  />
+                </svg>
+              </div>
+
+              <!-- the proceed button -->
+              <div class="flex">
+                <input
+                  class="rounded-xl cursor-pointer hover:bg-black transition-all duration-150 md:px-[8.5rem] px-[7.5rem] bg-primaryBlue text-white font-OutfitM text-base p-2"
+                  type="button"
+                  value="Proceed"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <title>Jodipr</title>
+  </head>
+  <body>
+    <div class="relative container mx-auto">
+      <!-- Navbar -->
+      <nav class="p-3">
+        <div class="flex items-center justify-between">
+          <div class="pt-2 w-1/2 md:max-w-max">
+            <img src="images/logo.svg" alt="" />
+          </div>
+          <!-- nav links -->
+          <div
+            class="hidden md:flex font-MontserratM text-xs text-primaryBlue space-x-6"
+          >
+            <a
+              class="transition ease-in-out duration-300 hover:text-primaryBlack"
+              href="#"
+              >Invest now</a
+            >
+            <a
+              class="transition ease-in-out duration-300 hover:text-primaryBlack"
+              href="#"
+              >Social booster</a
+            >
+            <a
+              class="transition ease-in-out duration-300 hover:text-primaryBlack"
+              href="#"
+              >Community</a
+            >
+            <a
+              class="transition ease-in-out duration-300 hover:text-primaryBlack"
+              href="#"
+              >Learn more</a
+            >
+          </div>
+          <!-- buttons -->
+          <!-- Login button -->
+          <div class="hidden md:flex items-end space-x-2">
+            <a
+              href="login.html"
+              class="p-1 px-8 py-3 transition ease-in-out duration-300 font-MontserratB hover:bg-green-400 hover:text-black text-white bg-primaryBlack text-xs font-bold rounded-full baseline"
+              >Login</a
+            >
+            <!-- Register button -->
+            <a
+              href="register.html"
+              class="p-1 px-8 py-3 flex font-MontserratB hover:text-black hover:bg-green-400 text-white bg-primaryBlue text-xs font-bold rounded-full baseline"
+              >Get started</a
+            >
+          </div>
+
+          <!-- Hamburger menu for small screens -->
+          <div class="flex md:hidden">
+            <!-- hamburger icon -->
+            <button
+              id="menu-btn"
+              class="md:hidden block relative top-0 left-12 hamburger focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+          <!-- Hamburger menu -->
+          <div class="md:hidden">
+            <div
+              id="menu"
+              class="hidden rounded-lg z-20 absolute flex-col items-center self-end py-8 mt-10 space-y-5 font-bold font-MontserratR bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+            >
+              <!-- Links -->
+              <a class="text-slate-700" href="#">Invest now</a>
+              <a class="text-slate-700" href="#">Social booster</a>
+              <a class="text-slate-700" href="#">Community</a>
+              <a class="text-slate-700" href="#">Learn more</a>
+
+              <!-- Login button -->
+          <div class="flex items-end space-x-2">
+            <a
+              href="login.html"
+              class="p-1 px-8 py-3 transition ease-in-out duration-300 font-MontserratB hover:bg-green-400 hover:text-black text-white bg-primaryBlack text-xs font-bold rounded-full baseline"
+              >Login</a
+            >
+            <!-- Register button -->
+            <a
+              href="register.html"
+              class="p-1 px-8 py-3 flex font-MontserratB hover:text-black hover:bg-green-400 text-white bg-primaryBlue text-xs font-bold rounded-full baseline"
+              >Sign up</a
+            >
+          </div>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- First section of landing page -->
+    <section>
+      <div
+        class="relative container mt-10 space-y-0 md:space-x-12 flex flex-row mx-auto"
+      >
+        <!-- Illustration half -->
+        <div class="hidden md:flex w-1/2 p-2">
+          <img src="images/social_growth.svg" alt="" />
+        </div>
+        <!-- intro text-->
+        <div
+          class="flex items-center justify-center xs:mx-5 sm:mx-4 font-OutfitM max-w-md flex-col space-y-12 md:w-1/2"
+        >
+          <!-- header -->
+          <h1
+            class="text-5xl md:text-6xl tracking-wider text-center my-4 font-bold mt-8 text-primaryBlue"
+          >
+            Are you an
+            <div
+              class="bg-green-400 text-slate-800 mx-auto md:w-auto w-[16rem] rounded-lg mt-4 p-2"
+            >
+              <p class="md:text-6xl text-4xl" id="changing_text">Individual</p>
+            </div>
+            who wants to promote your brand or content?
+          </h1>
+          <!-- pararaph -->
+          <p class="text-slate-500 md:text-center text-xl">
+            Get genuine followers, subscribers, likes and shares on your
+            facebook pages, youtube channels and more.
+          </p>
+          <!-- cta button -->
+          <div class="flex md:justify-center">
+            <a
+              href="register"
+              class="p-1 px-10 py-4 transition ease-in-out duration-300 hidden md:flex font-MontserratB hover:bg-green-400 hover:text-black text-white bg-primaryBlue text-xs font-bold rounded-full baseline"
+              >Get started</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second section -->
+    <section>
+      <div
+        class="relative container flex flex-col md:my-24 md:flex-row space-y-0 md:space-x-36 mx-auto p-4"
+      >
+        <!-- What's different half 1 -->
+        <div
+          id="difference"
+          class="flex flex-col md:pl-12 p-2 items-end md:w-3/4 text-start md:space-y-4 justify-start"
+        >
+          <h2
+            class="text-primaryBlue text-4xl md:text-6xl font-bold font-OutfitB"
+          >
+            What's different about
+            <span class="text-slate-700 underline">Jodipr</span>?
+          </h2>
+          <p class="text-slate-500 p-2 font-OutfitR text-xl">
+            We are dedicated to see your content grow a massive number of
+            followers or subscribers and we want to help you do that in a
+            special way.
+          </p>
+        </div>
+
+        <!-- what's different about us half 2 -->
+        <div class="flex flex-col space-y-48 p-4 justify-start items-start">
+          <!-- feature difference list items -->
+          <div class="flex flex-col space-x-0 space-y-6 m-0">
+            <!-- List item number 1 -->
+            <div id="list-item" class="flex flex-col space-y-2">
+              <!-- Header -->
+              <div class="rounded-full md:bg-green-400 md:w-[26rem]">
+                <div class="flex items-center space-x-4 md:space-x-2">
+                  <!-- heading number -->
+                  <div
+                    class="rounded-md md:rounded-full p-1 px-[14px] text-white text-base font-bold font-OutfitM bg-black"
+                  >
+                    1
+                  </div>
+                  <!-- Heading text -->
+                  <h3 class="text-black font-OutfitM">
+                    Content liked, shared and followed by real users.
+                  </h3>
+                </div>
+              </div>
+              <p
+                class="text-slate-700 ml-12 md:ml-0 md:px-4 w-4/5 font-OutfitR text-base"
+              >
+                While others use bots, we get real users to like, share and
+                follow your content. This gives your content an organic feel of
+                growth of fans.
+              </p>
+            </div>
+
+            <!-- List item number 2 -->
+            <div id="list-item" class="flex flex-col space-y-2">
+              <!-- Haeder -->
+              <div class="rounded-full md:bg-green-400 md:w-[26rem]">
+                <div class="flex items-center space-x-4 md:space-x-2">
+                  <!-- heading number -->
+                  <div
+                    class="rounded-md md:rounded-full p-1 text-white text-base font-bold px-[13px] font-OutfitM bg-black"
+                  >
+                    2
+                  </div>
+                  <!-- Heading text -->
+                  <h3 class="text-black font-OutfitM">
+                    User preference-based content recommendation.
+                  </h3>
+                </div>
+              </div>
+              <p
+                class="text-slate-700 ml-12 md:ml-0 md:px-4 w-4/5 font-OutfitR text-base"
+              >
+                We seek to get you the right users by recommending content based
+                on user preferences, making our users true fans of your content.
+              </p>
+            </div>
+
+            <!-- List item number 3 -->
+            <div id="list-item" class="flex flex-col space-y-2">
+              <!-- Header -->
+              <div class="rounded-full md:bg-green-400 md:w-[26rem]">
+                <div class="flex items-center space-x-4 md:space-x-2">
+                  <!-- heading number -->
+                  <div
+                    class="rounded-md md:rounded-full p-1 text-white text-base font-bold px-[13px] font-OutfitM bg-black"
+                  >
+                    3
+                  </div>
+                  <!-- Heading text -->
+                  <h3 class="text-black font-OutfitM">
+                    Project based ecosystem.
+                  </h3>
+                </div>
+              </div>
+              <p
+                class="text-slate-700 ml-12 md:ml-0 md:px-4 w-4/5 font-OutfitR text-base"
+              >
+                Our main goal is to stay and help grow your content and
+                cultivate mass number of followers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section>
+      <div
+        class="flex flex-col-reverse space-x-12 space-y-0 md:flex-row mx-auto pt-12 bg-primaryBlue md:p-12 md:px-24"
+      >
+        <!-- Left half -->
+        <div
+          class="flex flex-col space-y-12 p-6 space-x-0 items-center justify-center"
+        >
+          <!-- svg illustration -->
+          <div class="w-auto">
+            <img src="images/money_income.svg" alt="" />
+          </div>
+          <div
+            class="flex flex-col space-y-12 md:items-start md:justify-center"
+          >
+            <p class="text-white font-OutfitM text-lg md:px-2">
+              Choose any of our investment models and start making money now.<br />
+              Earn money by performing daily tasks such as liking and sharing
+              facebook or instagram posts, follow pages and youtube channels
+              you’re interested in.
+            </p>
+
+            <!-- link for learn more -->
+            <div class="flex md:justify-center">
+              <a
+                href="#"
+                class="p-1 px-10 py-4 transition-all ease-in-out duration-100 md:flex font-MontserratB hover:bg-green-400 text-black bg-white text-xs font-bold rounded-full baseline"
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Right half -->
+        <div
+          class="flex flex-col p-1 md:p-1 md:items-center justify-start space-y-1"
+        >
+          <!-- section header -->
+          <div class="md:w-3/4">
+            <h2
+              class="text-white font-bold md:text-center font-OutfitB text-4xl md:text-6xl md:tracking-wider leading-tighter"
+            >
+              Earn money from your social account by liking, sharing and
+              following.
+            </h2>
+          </div>
+
+          <!-- svg illustration -->
+          <div class="hidden md:flex">
+            <img class="" src="images/young-and-happy.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section>
+      <div class="flex p-2 mx-auto bg-primaryBlue">
+        <div class="container mt-16 mb-20 mx-auto">
+          <!-- Upper part of section -->
+          <div
+            class="flex flex-col-reverse space-y-12 md:px-20 md:space-y-0 md:flex-row md:space-x-48"
+          >
+            <!-- Left hand side -->
+            <div class="flex flex-col md:w-1/2 items-end justify-start p-2">
+              <!-- section header -->
+              <h2
+                class="md:text-5xl text-4xl text-white font-bold font-OutfitB md:tracking-wider leading-tighter"
+              >
+                Choose a model and start making money
+              </h2>
+              <!-- section paragraph -->
+              <div class="flex flex-col mt-4 space-y-2 p-1">
+                <p
+                  class="text-white text-lg leading-tight md:w-1/2 font-OutfitR"
+                >
+                  Every model comes with different number of tasks per day.
+                </p>
+                <p class="text-white text-lg leading-tight font-OutfitR">
+                  A task is simply what you need to do to earn e.g liking a
+                  Facebook page, following a YouTube channel etc.
+                </p>
+                <p class="text-white text-lg leading-tight font-OutfitR">
+                  Money earned could be withdrawn with a bronze subscription and
+                  upwards.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right hand side for svg -->
+            <div
+              class="flex mt-12 md:mt-0 md:justify-end justify-center items-start"
+            >
+              <img class="w-3/4 md:w-auto" src="images/coins.svg" alt="" />
+            </div>
+          </div>
+
+          <!-- Lower part 1 of section -->
+          <div
+            class="flex flex-col md:flex-row md:space-x-8 md:space-y-0 space-y-8 space-x-0 mx-auto mt-10 p-6 justify-center items-center"
+          >
+            <!-- Subscription model -->
+            <!-- Outer rectangle -->
+            <div
+              class="flex flex-col md:py-14 p-4 items-center transition-all ease-in-out duration-200 hover:scale-105 rounded-3xl hover:shadow-2xl cursor-pointer bg-slate-200 space-y-6"
+            >
+              <!-- Inner upper rectangle with price and svg medal -->
+              <div class="flex flex-row p-2 space-x-16">
+                <!-- upper left rectangle with price and subscription name -->
+                <div class="flex flex-col space-y-2 p-1">
+                  <!-- price -->
+                  <div class="flex flex-row items-center justify-start">
+                    <img class="w-8 h-8" src="images/cedi.png" alt="" />
+                    <h3 class="text-black font-OutfitR text-4xl">
+                      0.<span class="text-2xl">00</span>
+                    </h3>
+                  </div>
+                  <!-- Subscription name -->
+                  <div class="flex flex-col items-start justify-start">
+                    <h3
+                      class="text-primaryBlue font-OutfitM text-start text-3xl md:text-5xl"
+                    >
+                      Free
+                    </h3>
+                    <p
+                      class="text-primaryBlue font-OutfitM text-start text-base"
+                    >
+                      subscription
+                    </p>
+                  </div>
+                </div>
+                <!-- svg medal -->
+                <div class="flex justify-center items-center">
+                  <img class="w-[90px] h-[90px]" src="images/free.png" alt="" />
+                </div>
+              </div>
+              <!-- Middle rectangle with features -->
+              <div
+                class="flex flex-col py-4 p-2 md:p-4 items-center rounded-3xl bg-white"
+              >
+                <!-- Feature items -->
+                <div class="flex md:w-[15rem] flex-col">
+                  <!-- Feature item #1 -->
+                  <div class="flex items-center py-4 space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM md:text-lg">
+                      2 tasks / day
+                    </p>
+                  </div>
+                  <!-- Feature item #2 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM md:text-lg">
+                      Earn $¢1.00 / day
+                    </p>
+                  </div>
+                  <!-- Feature item #3 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM md:text-lg">
+                      Starter pack free earn <br />
+                      ¢1.00
+                    </p>
+                  </div>
+                  <!-- Feature item #4 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-7 h-7 md:w-auto md:h-auto"
+                      src="images/cancel.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM md:text-lg">
+                      Instant withdrawals
+                    </p>
+                  </div>
+                  <!-- Feature item #5 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-7 h-7 md:w-auto md:h-auto"
+                      src="images/cancel.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM md:text-lg">
+                      Task analytics and statistics
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Outer rectangle -->
+            <div
+              class="flex flex-col md:py-14 p-4 items-center transition-all ease-in-out duration-200 hover:scale-105 rounded-3xl hover:shadow-2xl cursor-pointer bg-slate-200 space-y-6"
+            >
+              <!-- Inner upper rectangle with price and svg medal -->
+              <div class="flex flex-row p-2 space-x-3">
+                <!-- upper left rectangle with price and subscription name -->
+                <div class="flex flex-col space-y-2 p-1">
+                  <!-- price -->
+                  <div class="flex flex-row items-center justify-start">
+                    <img class="w-8 h-8" src="images/cedi.png" alt="" />
+                    <h3 class="text-black font-OutfitR text-4xl">
+                      50.<span class="text-2xl">00</span>
+                    </h3>
+                  </div>
+                  <!-- Subscription name -->
+                  <div class="flex flex-col items-start justify-start">
+                    <h3
+                      class="text-primaryBlue font-OutfitM text-start text-3xl md:text-5xl"
+                    >
+                      Bronze
+                    </h3>
+                    <p
+                      class="text-primaryBlue font-OutfitM text-start text-base"
+                    >
+                      subscription
+                    </p>
+                  </div>
+                </div>
+                <!-- svg medal -->
+                <div class="flex justify-end items-center">
+                  <img
+                    class="w-[90px] h-[90px] ml-3"
+                    src="images/bronze-2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- Middle rectangle with features -->
+              <div
+                class="flex flex-col py-4 p-2 md:p-4 items-center rounded-3xl bg-white"
+              >
+                <!-- Feature items -->
+                <div class="flex md:w-[15rem] flex-col">
+                  <!-- Feature item #1 -->
+                  <div class="flex items-center py-4 space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM md:text-lg">
+                      3 tasks / day
+                    </p>
+                  </div>
+                  <!-- Feature item #2 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM md:text-lg">
+                      Earn ¢4.00 / day
+                    </p>
+                  </div>
+                  <!-- Feature item #3 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM md:text-lg">
+                      Starter pack free earn <br />
+                      ¢3.00
+                    </p>
+                  </div>
+                  <!-- Feature item #4 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-7 h-7 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM md:text-lg">
+                      Instant withdrawals
+                    </p>
+                  </div>
+                  <!-- Feature item #5 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-7 h-7 md:w-auto md:h-auto"
+                      src="images/cancel.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM md:text-lg">
+                      Task analytics and statistics
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Outer rectangle -->
+            <div
+              class="flex flex-col justify-around transition-all ease-in-out duration-200 hover:scale-105 items-center md:py-14 hover:shadow-2xl rounded-3xl p-4 bg-slate-200 cursor-pointer space-y-6"
+            >
+              <!-- Inner upper rectangle with price and svg medal -->
+              <div class="flex flex-row p-2 space-x-8">
+                <!-- upper left rectangle with price and subscription name -->
+                <div class="flex flex-col space-y-1 p-1">
+                  <!-- price -->
+                  <div class="flex flex-row items-center justify-start">
+                    <img class="w-8 h-8" src="images/cedi.png" alt="" />
+                    <h3 class="text-black font-OutfitR text-4xl">
+                      100.<span class="text-2xl">00</span>
+                    </h3>
+                  </div>
+                  <!-- Subscription name -->
+                  <div class="flex flex-col items-start justify-start">
+                    <h3
+                      class="text-primaryBlue font-OutfitM text-start text-3xl md:text-5xl"
+                    >
+                      Silver
+                    </h3>
+                    <p
+                      class="text-primaryBlue font-OutfitM text-start text-base"
+                    >
+                      subscription
+                    </p>
+                  </div>
+                </div>
+                <!-- svg medal -->
+                <div class="flex justify-center items-center">
+                  <img
+                    class="w-[90px] h-[90px]"
+                    src="images/silver-medal.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- Middle rectangle with features -->
+              <div class="flex flex-col p-4 items-center rounded-3xl bg-white">
+                <!-- Feature items -->
+                <div class="flex w-[15rem] flex-col">
+                  <!-- Feature item #1 -->
+                  <div class="flex items-center py-4 space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM text-base md:text-lg">
+                      5 tasks / day
+                    </p>
+                  </div>
+                  <!-- Feature item #2 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM text-base md:text-lg">
+                      Earn ¢7.50 / day
+                    </p>
+                  </div>
+                  <!-- Feature item #3 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM text-base md:text-lg">
+                      Starter pack free earn <br />
+                      ¢5.00
+                    </p>
+                  </div>
+                  <!-- Feature item #4 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM text-base md:text-lg">
+                      Instant withdrawals
+                    </p>
+                  </div>
+                  <!-- Feature item #5 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM text-base md:text-lg">
+                      Task analytics and statistics
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex space-y-6 md:space-y-0 space-x-0 p-5 md:p-0 flex-col md:flex-row md:space-x-8 items-center justify-center"
+          >
+            <!-- Outer rectangle -->
+            <div
+              class="flex flex-col transition-all ease-in-out duration-200 hover:scale-105 hover:shadow-2xl md:py-14 cursor-pointer items-center rounded-3xl p-4 bg-slate-200 space-y-6"
+            >
+              <!-- Inner upper rectangle with price and svg medal -->
+              <div class="flex flex-row p-2 space-x-[39px]">
+                <!-- upper left rectangle with price and subscription name -->
+                <div class="flex flex-col space-y-2">
+                  <!-- price -->
+                  <div class="flex flex-row items-center justify-start">
+                    <img class="w-8 h-8" src="images/cedi.png" alt="" />
+                    <h3 class="text-black font-OutfitR text-4xl">
+                      200.<span class="text-2xl">00</span>
+                    </h3>
+                  </div>
+                  <!-- Subscription name -->
+                  <div class="flex flex-col items-start justify-start">
+                    <h3
+                      class="text-primaryBlue font-OutfitM text-start text-3xl md:text-5xl"
+                    >
+                      Gold
+                    </h3>
+                    <p
+                      class="text-primaryBlue font-OutfitM text-start text-base"
+                    >
+                      subscription
+                    </p>
+                  </div>
+                </div>
+                <!-- svg medal -->
+                <div class="flex justify-center items-center">
+                  <img class="w-[80px] h-[80px]" src="images/coin.png" alt="" />
+                </div>
+              </div>
+              <!-- Middle rectangle with features -->
+              <div class="flex flex-col p-4 items-center rounded-3xl bg-white">
+                <!-- Feature items -->
+                <div class="flex w-[15rem] flex-col">
+                  <!-- Feature item #1 -->
+                  <div class="flex items-center space-x-4 py-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM text-base md:text-lg">
+                      8 tasks / day
+                    </p>
+                  </div>
+                  <!-- Feature item #2 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM text-base md:text-lg">
+                      Earn $¢12.00 / day
+                    </p>
+                  </div>
+                  <!-- Feature item #3 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM text-base md:text-lg">
+                      Starter pack free earn <br />
+                      ¢10.00
+                    </p>
+                  </div>
+                  <!-- Feature item #4 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM text-base md:text-lg">
+                      Instant withdrawals
+                    </p>
+                  </div>
+                  <!-- Feature item #5 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-slate-800 font-OutfitM text-base md:text-lg">
+                      Task analytics and statistics
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Outer rectangle -->
+            <div
+              class="flex transition-all ease-in-out duration-200 flex-col hover:shadow-2xl md:py-14 hover:scale-105 cursor-pointer items-center rounded-3xl p-4 bg-slate-200 space-y-6"
+            >
+              <!-- Inner upper rectangle with price and svg medal -->
+              <div class="flex flex-row p-2 space-x-[39px]">
+                <!-- upper left rectangle with price and subscription name -->
+                <div class="flex flex-col space-y-2">
+                  <!-- price -->
+                  <div class="flex flex-row items-center justify-start">
+                    <img class="w-8 h-8" src="images/cedi.png" alt="" />
+                    <h3 class="text-black font-OutfitR text-4xl">
+                      500.<span class="text-2xl">00</span>
+                    </h3>
+                  </div>
+                  <!-- Subscription name -->
+                  <div class="flex flex-col items-start justify-start">
+                    <h3
+                      class="text-primaryBlue font-OutfitM text-start text-3xl md:text-4xl"
+                    >
+                      Platinum
+                    </h3>
+                    <p
+                      class="text-primaryBlue font-OutfitM text-start text-base"
+                    >
+                      subscription
+                    </p>
+                  </div>
+                </div>
+                <!-- svg medal -->
+                <div class="flex justify-center items-center">
+                  <img
+                    class="w-[80px] h-[80px]"
+                    src="images/platinum.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- Middle rectangle with features -->
+              <div class="flex flex-col p-4 items-center rounded-3xl bg-white">
+                <!-- Feature items -->
+                <div class="flex w-[15rem] flex-col">
+                  <!-- Feature item #1 -->
+                  <div class="flex items-center space-x-4 py-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-black font-OutfitM text-base md:text-lg">
+                      12 tasks / day
+                    </p>
+                  </div>
+                  <!-- Feature item #2 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-black font-OutfitM text-base md:text-lg">
+                      Earn $¢18.00 / day
+                    </p>
+                  </div>
+                  <!-- Feature item #3 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-black font-OutfitM text-base md:text-lg">
+                      Starter pack free earn <br />
+                      ¢15.00
+                    </p>
+                  </div>
+                  <!-- Feature item #4 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-black font-OutfitM text-base md:text-lg">
+                      Instant withdrawals
+                    </p>
+                  </div>
+                  <!-- Feature item #5 -->
+                  <div class="flex items-center space-x-4 flex-row p-1">
+                    <img
+                      class="w-6 h-6 md:w-auto md:h-auto"
+                      src="images/check.svg"
+                      alt=""
+                    />
+                    <p class="text-black font-OutfitM text-base md:text-lg">
+                      Task analytics and statistics
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section>
+      <div
+        id="cta"
+        class="flex flex-col space-y-6 md:space-y-0 justify-between items-center md:flex-row p-6 bg-primaryGreen"
+      >
+        <!-- Left column -->
+
+        <!-- text -->
+        <div class="flex flex-col items-center md:space-y-4 md:p-4">
+          <h2 class="text-black text-3xl md:text-5xl font-bold font-OutfitB">
+            Join us today!
+          </h2>
+          <h4
+            class="text-black text-lg md:w-3/4 md:text-2xl font-OutfitM text-center"
+          >
+            We are the best when it comes to social growth.
+          </h4>
+        </div>
+        <!-- Right column -->
+        <div class="md:mr-10">
+          <a
+            href="#"
+            class="text-white transition-all ease-in-out duration bg-black hover:text-black rounded-full hover:bg-white px-16 p-4 font-bold font-MontserratM text-base baseline"
+            >Get started
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="flex flex-col-reverse md:flex-row p-6 md:p-12 bg-white space-y-6 md:space-y-0 md:space-x-16 mx-auto items-center justify-center md:items-start"
+      >
+        <!-- Logo -->
+        <div class="flex flex-col mt-12 md:mt-0 items-start space-y-5">
+          <!-- brand logo -->
+          <img class="md:h-auto h-[50px]" src="images/logo.svg" alt="" />
+          <!-- social links -->
+          <div class="justify-start grid grid-cols-4 gap-3">
+            <a href="#">
+              <img class="w-8 h-8" src="images/facebook.png" alt="" />
+            </a>
+            <a href="#"><img src="images/instagram.svg" alt="" /></a>
+            <a href="#"><img src="images/twitter-dark.svg" alt="" /></a>
+            <a href="#"><img src="images/youtube.svg" alt="" /></a>
+          </div>
+          <p class="text-slate-400 font-OutfitR text-sm">
+            Copyright &copy; 2023 Jodipr Inc. All rights reserved.
+          </p>
+        </div>
+
+        <!-- Products links -->
+        <div
+          class="flex flex-col space-y-3 items-center justify-center md:items-start md:justify-start"
+        >
+          <h3 class="text-black font-bold font-MontserratB text-xl md:text-lg">
+            Products
+          </h3>
+          <div
+            class="flex flex-col md:items-start items-center md:w-36 space-y-2 p-1"
+          >
+            <a
+              href="#"
+              class="hover:text-slate-500 transition-all duration-100 text-slate-400 md:text-sm font-MontserratR"
+              >Follower booster</a
+            >
+            <a
+              href="#"
+              class="hover:text-slate-500 transition-all duration-100 text-slate-400 md:text-sm font-MontserratR"
+              >Subscriber booster</a
+            >
+            <a
+              href="#"
+              class="hover:text-slate-500 transition-all duration-100 text-slate-400 md:text-sm font-MontserratR"
+              >Likes booster</a
+            >
+            <a
+              href="#"
+              class="hover:text-slate-500 transition-all duration-100 text-slate-400 md:text-sm font-MontserratR"
+              >Content sharing</a
+            >
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div
+          class="flex flex-col space-y-3 md:items-start items-center justify-center"
+        >
+          <h3 class="text-black font-bold font-MontserratB text-xl md:text-lg">
+            Links
+          </h3>
+          <div
+            class="flex md:items-start items-center justify-center flex-col md:w-32 space-y-2"
+          >
+            <a
+              href="#"
+              class="hover:text-slate-500 transition-all duration-100 text-slate-400 md:text-sm font-MontserratR"
+              >Invest now</a
+            >
+            <a
+              href="#"
+              class="hover:text-slate-500 transition-all duration-100 text-slate-400 md:text-sm font-MontserratR"
+              >Social booster</a
+            >
+          </div>
+        </div>
+
+        <!-- Company links -->
+        <div
+          class="flex flex-col items-center justify-center space-y-3 md:items-start md:justify-start"
+        >
+          <h3 class="text-black font-bold font-MontserratB text-xl md:text-lg">
+            Company
+          </h3>
+          <div
+            class="flex flex-col md:justify-start md:items-start items-center justify-center space-y-2 p-1"
+          >
+            <a
+              href="#"
+              class="hover:text-slate-500 transition-all duration-100 text-slate-400 md:text-sm font-MontserratR"
+              >About Us</a
+            >
+            <a
+              href="#"
+              class="hover:text-slate-500 transition-all duration-100 text-slate-400 md:text-sm font-MontserratR"
+              >Community</a
+            >
+          </div>
+        </div>
+
+        <!-- Legal links -->
+        <div
+          class="flex flex-col space-y-3 md:w-36 items-center justify-center md:items-start md:justify-start"
+        >
+          <h3 class="text-black font-bold font-MontserratB text-xl md:text-lg">
+            Legal
+          </h3>
+          <div
+            class="flex flex-col items-center justify-center md:items-start md:justify-start space-y-2"
+          >
+            <a
+              href="#"
+              class="hover:text-slate-500 transition-all duration-100 text-slate-400 md:text-sm font-MontserratR"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="hover:text-slate-500 transition-all duration-100 text-slate-400 md:text-sm font-MontserratR"
+              >Terms of Use</a
+            >
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="hidden md:flex flex-col space-y-2">
+          <!-- Sign up button -->
+          <a
+            href="register.html"
+            class="text-black transition-all ease-in-out duration bg-primaryGreen hover:text-white rounded-full hover:bg-black text-center px-13 p-3 font-bold font-MontserratM text-sm baseline"
+            >Sign Up</a
+          >
+          <!-- Login button -->
+          <a
+            href="login.html"
+            class="text-black transition-all ease-in-out duration bg-primaryBlue hover:text-white rounded-full hover:bg-black px-12 p-3 font-bold font-MontserratM text-sm text-center baseline"
+            >Login</a
+          >
+        </div>
+      </div>
+      <!-- Made with Love -->
+      <h3
+        class="text-slate-400 tracking-wide p-4 mb-6 mt-32 font-OutfitR text-base text-center"
+      >
+        Made with 💙 in Ghana 🇬🇭.
+      </h3>
+    </footer>
+
+    <!-- JQuery script to handle some functionalities -->
+    <script>
+      $(document).ready(function () {
+        // Hamburger menu code
+        $("#menu-btn").click(function () {
+          $(this).toggleClass("open");
+          $("#menu").toggleClass("flex");
+          $("#menu").toggleClass("hidden");
+        });
+
+        // Code to handle text changing on header
+        var count = 0;
+        var text_list = ["Individual", "Organization", "Company"];
+        var c_text = $("p#changing_text");
+
+        setInterval(function () {
+          count = count % text_list.length;
+          c_text.text(text_list[count]);
+          count++;
+        }, 2000);
+
+        // setInterval(function () {
+        //   c_text.toggle(500);
+        // }, 1500);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Verification - Jodipr</title>
+    <link rel="stylesheet" href="/dist/style.css" />
+  </head>
+  <body>
+    <div class="relative container mx-auto mt-10">
+      <div class="flex flex-col md:flex-row space-x-2 items-center justify-center">
+        <!-- Left side  -->
+        <!-- SVG Illustration -->
+        <div class="hidden md:flex mt-6" >
+          <img src="images/verified-amico.svg" alt="">
+        </div>
+        <!-- Right side verification form -->
+        <div class="flex flex-col items-center space-y-12 justify-start">
+          <!-- Page heading and sub paragraph -->
+          <div class="flex flex-col space-y-2 justify-start items-center">
+            <h1 class="text-5xl md:text-6xl mt-10 md:mt-0 md:w-3/4 text-center text-primaryBlue font-OutfitM font-bold">
+              Let's verify your identity.
+            </h1>
+            <p class="text-slate-500 text-xl font-OutfitR text-center md:w-1/2">
+              Enter your email address or phone number to receive a verification code. 
+            </p>
+          </div>
+          <!-- Verification Form -->
+          <form class="flex flex-col space-y-2" action="">
+
+            <!-- Phone or Email textbox -->
+            <input class="text-slate-700 text-base font-OutfitR
+            focus:outline-none transition-all ease-in-out duration-200
+            bg-slate-200 p-2 px-4 w-[20rem] rounded-xl"
+            type="text" placeholder="Phone number or email address">
+
+            <!-- Send button -->
+            <input
+                class="rounded-xl cursor-pointer hover:bg-black transition-all duration-150 w-[20rem] bg-primaryBlue text-white font-OutfitM text-base p-2"
+                type="button"
+                value="Send code"
+              />
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
